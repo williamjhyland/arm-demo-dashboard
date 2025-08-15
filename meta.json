@@ -1,0 +1,14 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "capgemini:arm-demo-dashboard",
+  "visibility": "public",
+  "url": "https://github.com/williamjhyland/arm-demo-dashboard",
+  "description": "Arm Demo Dashboard",
+  "applications": [
+    {
+      "name": "dashboard",
+      "type": "single_machine",
+      "entrypoint": "dist/index.html"
+    }
+  ]
+}

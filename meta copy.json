@@ -1,0 +1,31 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "capgemini:arm-demo-dashboard",
+  "visibility": "public",
+  "url": "https://github.com/williamjhyland/arm-demo-dashboard",
+  "description": "Arm Demo Dashboard",
+  "models": [
+    {
+      "api": "rdk:component:generic",
+      "model": "capgemini:arm-demo-dashboard:dashboard",
+      "short_description": "Placeholder model",
+      "markdown_link": "README.md#model-capgeminiarm-demo-dashboarddashboard"
+    }
+  ],
+  "applications": [
+    {
+      "name": "dashboard",
+      "type": "single_machine",
+      "entrypoint": "dist/index.html"
+    }
+  ],
+  "entrypoint": "bin/arm-demo-dashboard",
+  "first_run": "",
+  "markdown_link": "README.md",
+  "build": {
+    "build": "make module.tar.gz",
+    "setup": "make setup",
+    "path": "bin/module.tar.gz",
+    "arch": ["linux/amd64", "linux/arm64"]
+  }
+}
